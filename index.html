@@ -119,6 +119,8 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/particles.js"></script>
-			<script>particlesJS();</script>
+			<script>particlesJS.load('particles-js', 'assets/json/particle.json', function() {
+  console.log('callback - particles.js config loaded');
+});;</script>
 	</body>
 </html>
